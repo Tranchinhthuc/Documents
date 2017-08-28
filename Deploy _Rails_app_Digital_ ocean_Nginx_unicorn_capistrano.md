@@ -3,7 +3,7 @@
 -----------------------------------------------------
 Deploy với Nginx + unicorn.
 
-> Không deploy trực tiếp rails app trên tài khoản root của server. Thay vì vậy, tạo 1 user và deploy trên user này, trong bài này, sẽ đặt tên user là deploy. Tham khảo cách tạo 1 user trên ubuntu: https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
+> Ta sẽ không deploy trực tiếp rails app trên tài khoản root của server. Thay vì vậy, tạo 1 user và deploy trên user này, trong bài này, sẽ đặt tên user là deploy. Tham khảo cách tạo 1 user trên ubuntu: https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
 
 Cài đặt môi trường cần thiết để chạy được 1 app rails, giống như khi cài đặt trên máy local. Trong bài hướng dẫn này sử dụng rbenv để quản lý ruby version. Tham khảo https://gorails.com/setup/ubuntu/14.04
 
