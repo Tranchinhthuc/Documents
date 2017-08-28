@@ -1,7 +1,7 @@
 ## **Deploy Rails app lên Digital Ocean với Nginx, unicorn, capistrano.** ##
 
 -----------------------------------------------------
-Deploy với Nginx + unicorn.
+**Deploy với Nginx + unicorn.**
 
 > Ta sẽ không deploy trực tiếp rails app trên tài khoản root của server. Thay vì vậy, tạo 1 user và deploy trên user này, trong bài này, sẽ đặt tên user là deploy. Tham khảo cách tạo 1 user trên ubuntu: https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
 
@@ -76,9 +76,9 @@ Cổng mặc định của unicorn là 8080. Vào http://SERVER_PUBLIC_IP:8080 �
 		  ENV['BUNDLE_GEMFILE'] = File.join(root, 'Gemfile')
 		end
 
-Trong file này có đề cập tới các đường dẫn liên quan tới  shared/sockets. Do đó cần tạo folder này. Tại thư mục của rails app, chạy lệnh:
+Tại thư mục của rails app, chạy lệnh để tạo các folder sẽ sử dụng sau đó:
 
-    $ mkdir -p shared/sockets
+    $ mkdir -p shared/pids shared/sockets shared/log
  
 **Tạo 1 file script để có thể start/stop unicorn.**
 
