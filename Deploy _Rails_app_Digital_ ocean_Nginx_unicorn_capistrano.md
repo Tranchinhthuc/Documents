@@ -2,7 +2,6 @@
 
 -----------------------------------------------------
 Deploy với Nginx + unicorn.
-**Note** 
 
 > Không deploy trực tiếp rails app trên tài khoản root của server. Thay vì vậy, tạo 1 user và deploy trên user này, trong bài này, sẽ đặt tên user là deploy. Tham khảo cách tạo 1 user trên ubuntu: https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
 
